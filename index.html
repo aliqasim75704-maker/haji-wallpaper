@@ -6,8 +6,7 @@
 
 <title>Haji Wallpaper & Panaflex | Khewra</title>
 
-<meta name="description"
-content="Haji Wallpaper & Panaflex - Premium wallpaper and Panaflex installation in Khewra, Pind Dadan Khan, Jhelum. A1 quality with 5-year warranty.">
+<meta name="description" content="Haji Wallpaper & Panaflex - Premium wallpaper and Panaflex installation in Khewra, Pind Dadan Khan, Jhelum. A1 quality with 5-year warranty.">
 
 <style>
 
@@ -33,7 +32,7 @@ header{
     position:sticky;
     top:0;
     z-index:1000;
-    background:#ffffffee;
+    background:rgba(255,255,255,.95);
     backdrop-filter:blur(12px);
     border-bottom:1px solid #eee;
 }
@@ -45,7 +44,7 @@ header{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:20px;
+    gap:15px;
 }
 
 .logo{
@@ -60,15 +59,13 @@ header{
 nav a{
     text-decoration:none;
     color:#333;
-    margin-left:22px;
+    margin-left:20px;
     font-weight:600;
 }
 
 nav a:hover{
     color:#b8860b;
 }
-
-/* LANGUAGE BUTTON */
 
 .language-btn{
     border:1px solid #b8860b;
@@ -91,7 +88,7 @@ nav a:hover{
     padding:70px 20px;
 
     background:
-    linear-gradient(#0008,#0008),
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
     url("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1800&q=85");
 
     background-size:cover;
@@ -116,14 +113,12 @@ nav a:hover{
 .hero p{
     font-size:20px;
     line-height:1.7;
-    max-width:720px;
+    max-width:750px;
     margin:auto;
 }
 
 .hero-urdu{
-    margin-top:15px;
     direction:rtl;
-    font-size:19px;
     line-height:2;
 }
 
@@ -161,7 +156,7 @@ section{
     padding:80px 20px;
 }
 
-.section-container{
+.container{
     max-width:1200px;
     margin:auto;
 }
@@ -186,13 +181,13 @@ section{
     background:white;
 }
 
-.about-content{
+.about-text{
     max-width:850px;
     margin:auto;
     text-align:center;
 }
 
-.about-content p{
+.about-text p{
     font-size:18px;
     line-height:1.9;
     color:#555;
@@ -200,7 +195,8 @@ section{
 
 .urdu{
     direction:rtl;
-    font-family:Arial, "Noto Nastaliq Urdu", sans-serif;
+    font-size:19px;
+    line-height:2;
 }
 
 /* SERVICES */
@@ -216,7 +212,7 @@ section{
     padding:30px 20px;
     text-align:center;
     border-radius:18px;
-    box-shadow:0 8px 25px #0000000b;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
     transition:.25s;
 }
 
@@ -238,39 +234,48 @@ section{
     line-height:1.6;
 }
 
-/* SEARCH */
+/* GALLERY */
+
+.gallery-section{
+    background:#f7f5f1;
+}
 
 .search-box{
-    max-width:600px;
-    margin:0 auto 35px;
+    max-width:650px;
+    margin:0 auto 25px;
 }
 
 .search-box input{
     width:100%;
-    padding:17px 20px;
+    padding:17px 22px;
     border:1px solid #ddd;
     border-radius:50px;
     font-size:16px;
     outline:none;
+    background:white;
 }
 
 .search-box input:focus{
     border-color:#b8860b;
 }
 
-/* GALLERY */
+.gallery-count{
+    text-align:center;
+    color:#777;
+    margin-bottom:30px;
+}
 
 .gallery{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:20px;
+    gap:22px;
 }
 
 .design{
     background:white;
     border-radius:18px;
     overflow:hidden;
-    box-shadow:0 8px 25px #0000000c;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
     transition:.25s;
 }
 
@@ -279,9 +284,23 @@ section{
 }
 
 .design-image{
-    height:230px;
-    background-size:cover;
-    background-position:center;
+    width:100%;
+    height:270px;
+    background:#eee;
+    overflow:hidden;
+}
+
+.design-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.design:hover .design-image img{
+    transform:scale(1.03);
 }
 
 .design-info{
@@ -289,12 +308,28 @@ section{
 }
 
 .design-info h3{
-    margin-bottom:5px;
+    margin-bottom:7px;
 }
 
-.design-info p{
+.design-id{
     color:#888;
     font-size:14px;
+    margin-bottom:12px;
+}
+
+.whatsapp-small{
+    display:inline-block;
+    background:#25d366;
+    color:white;
+    padding:10px 15px;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:14px;
+}
+
+.whatsapp-small:hover{
+    opacity:.85;
 }
 
 /* CONTACT */
@@ -307,11 +342,11 @@ section{
 .contact-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:30px;
+    gap:25px;
 }
 
 .contact-card{
-    background:#222;
+    background:#242424;
     padding:30px;
     border-radius:20px;
 }
@@ -324,16 +359,15 @@ section{
 .contact-card p{
     color:#ccc;
     line-height:1.8;
-    margin-bottom:15px;
 }
 
 .contact-link{
-    display:block;
+    display:inline-block;
     color:#f3c969;
     text-decoration:none;
     font-size:18px;
     font-weight:bold;
-    margin:10px 0;
+    margin-top:12px;
 }
 
 .contact-link:hover{
@@ -353,7 +387,7 @@ footer strong{
     color:white;
 }
 
-/* WHATSAPP */
+/* FLOATING WHATSAPP */
 
 .whatsapp{
     position:fixed;
@@ -369,8 +403,39 @@ footer strong{
     justify-content:center;
     font-size:29px;
     text-decoration:none;
-    box-shadow:0 8px 25px #0004;
+    box-shadow:0 8px 25px rgba(0,0,0,.3);
     z-index:999;
+}
+
+/* IMAGE VIEWER */
+
+.viewer{
+    display:none;
+    position:fixed;
+    z-index:2000;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.94);
+    align-items:center;
+    justify-content:center;
+    padding:30px;
+}
+
+.viewer img{
+    max-width:95%;
+    max-height:90vh;
+    object-fit:contain;
+}
+
+.close-viewer{
+    position:absolute;
+    top:20px;
+    right:30px;
+    color:white;
+    font-size:40px;
+    cursor:pointer;
 }
 
 /* MOBILE */
@@ -399,12 +464,12 @@ footer strong{
         grid-template-columns:1fr;
     }
 
-    .hero{
-        min-height:85vh;
-    }
-
     section{
         padding:60px 15px;
+    }
+
+    .design-image{
+        height:280px;
     }
 
     .navbar{
@@ -430,13 +495,11 @@ HAJI <span>WALLPAPER</span> & PANAFLEX
 </div>
 
 <nav>
-
 <a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#services">Services</a>
 <a href="#designs">Designs</a>
 <a href="#contact">Contact</a>
-
 </nav>
 
 <button class="language-btn" onclick="toggleLanguage()">
@@ -491,17 +554,17 @@ Contact Us
 
 <section class="about" id="about">
 
-<div class="section-container">
+<div class="container">
 
 <div class="section-title">
 
-<h2>About Our Business</h2>
+<h2>About Haji Wallpaper & Panaflex</h2>
 
 <p>Quality • Professional Installation • 5-Year Warranty</p>
 
 </div>
 
-<div class="about-content">
+<div class="about-text">
 
 <p id="aboutEnglish">
 We install premium-quality Panaflex and wallpaper sheets on walls
@@ -527,7 +590,7 @@ with A1-quality workmanship. We provide a
 
 <section id="services">
 
-<div class="section-container">
+<div class="container">
 
 <div class="section-title">
 
@@ -537,68 +600,31 @@ with A1-quality workmanship. We provide a
 
 </div>
 
-
 <div class="services">
 
-
 <div class="service">
-
 <div class="service-icon">🏠</div>
-
 <h3>Home Wallpaper</h3>
-
-<p>
-Beautiful designs for bedrooms,
-living rooms and other areas of your home.
-</p>
-
+<p>Beautiful designs for bedrooms, living rooms and other areas of your home.</p>
 </div>
 
-
-
 <div class="service">
-
 <div class="service-icon">🏢</div>
-
 <h3>Office Wallpaper</h3>
-
-<p>
-Professional wall designs that
-give your workplace a modern look.
-</p>
-
+<p>Professional wall designs that give your workplace a modern look.</p>
 </div>
 
-
-
 <div class="service">
-
 <div class="service-icon">🎨</div>
-
 <h3>Custom Designs</h3>
-
-<p>
-Choose a design you love and
-we can help bring it to your wall.
-</p>
-
+<p>Choose a design you love and we can help bring it to your wall.</p>
 </div>
-
-
 
 <div class="service">
-
 <div class="service-icon">🖼️</div>
-
 <h3>Panaflex</h3>
-
-<p>
-Quality Panaflex printing and
-professional installation.
-</p>
-
+<p>Quality Panaflex printing and professional installation.</p>
 </div>
-
 
 </div>
 
@@ -610,88 +636,38 @@ professional installation.
 
 <!-- DESIGNS -->
 
-<section id="designs">
+<section class="gallery-section" id="designs">
 
-<div class="section-container">
+<div class="container">
 
 <div class="section-title">
 
-<h2>Explore Our Designs</h2>
+<h2>Our Wallpaper Designs</h2>
 
 <p>
-Browse our collection and find a design you love.
+Browse our collection and choose a design you love.
 </p>
 
 </div>
-
 
 <div class="search-box">
 
 <input
 type="text"
 id="search"
-placeholder="🔍 Search designs..."
-onkeyup="searchDesigns()"
+placeholder="🔍 Search by Design ID..."
+oninput="searchDesigns()"
 >
 
 </div>
 
+<div class="gallery-count" id="galleryCount">
+Showing 60 designs
+</div>
 
 <div class="gallery" id="gallery">
 
-
-<div class="design">
-
-<div class="design-image"
-style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85');">
-</div>
-
-<div class="design-info">
-
-<h3>Modern Luxury</h3>
-
-<p>Design ID: HW-001</p>
-
-</div>
-
-</div>
-
-
-
-<div class="design">
-
-<div class="design-image"
-style="background-image:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85');">
-</div>
-
-<div class="design-info">
-
-<h3>Elegant Interior</h3>
-
-<p>Design ID: HW-002</p>
-
-</div>
-
-</div>
-
-
-
-<div class="design">
-
-<div class="design-image"
-style="background-image:url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85');">
-</div>
-
-<div class="design-info">
-
-<h3>Premium Style</h3>
-
-<p>Design ID: HW-003</p>
-
-</div>
-
-</div>
-
+<!-- DESIGNS WILL BE CREATED BY JAVASCRIPT -->
 
 </div>
 
@@ -705,7 +681,7 @@ style="background-image:url('https://images.unsplash.com/photo-1600210492486-724
 
 <section class="contact" id="contact">
 
-<div class="section-container">
+<div class="container">
 
 <div class="section-title">
 
@@ -719,9 +695,7 @@ Get in touch for wallpaper and Panaflex installation.
 
 </div>
 
-
 <div class="contact-grid">
-
 
 <div class="contact-card">
 
@@ -733,25 +707,21 @@ Contact us directly on WhatsApp:
 
 <a
 class="contact-link"
-href="https://wa.me/923455675180?text=Assalam-o-Alaikum%20I%20want%20to%20ask%20about%20your%20wallpaper%20and%20Panaflex%20services."
+href="https://wa.me/923455675180"
 target="_blank">
-
 0345 5675180
-
 </a>
 
+<br>
 
 <a
 class="contact-link"
-href="https://wa.me/923009702356?text=Assalam-o-Alaikum%20I%20want%20to%20ask%20about%20your%20wallpaper%20and%20Panaflex%20services."
+href="https://wa.me/923009702356"
 target="_blank">
-
 0300 9702356
-
 </a>
 
 </div>
-
 
 
 <div class="contact-card">
@@ -761,7 +731,7 @@ target="_blank">
 <p>
 Haideri Chowk, Dandot Road,
 Khewra, Tehsil Pind Dadan Khan,
-District Jhelum.
+District Jhelum, Pakistan.
 </p>
 
 <a
@@ -774,7 +744,6 @@ target="_blank">
 </a>
 
 </div>
-
 
 </div>
 
@@ -805,92 +774,192 @@ Professional Wallpaper & Panaflex Installation
 
 <a
 class="whatsapp"
-href="https://wa.me/923455675180?text=Assalam-o-Alaikum%20I%20want%20to%20ask%20about%20your%20wallpaper%20and%20Panaflex%20services."
+href="https://wa.me/923455675180"
 target="_blank"
 title="WhatsApp">
-
 💬
-
 </a>
 
 
 
+<!-- FULL SCREEN IMAGE VIEWER -->
+
+<div class="viewer" id="viewer" onclick="closeViewer()">
+
+<span class="close-viewer">
+&times;
+</span>
+
+<img id="viewerImage" src="" alt="Wallpaper Design">
+
+</div>
+
+
+
 <script>
+
+/* CREATE 60 DESIGNS */
+
+const gallery = document.getElementById("gallery");
+
+for(let i = 1; i <= 60; i++){
+
+    let id = String(i).padStart(3,"0");
+
+    let design = document.createElement("div");
+
+    design.className = "design";
+
+    design.setAttribute("data-id", id);
+
+    design.innerHTML = `
+
+        <div class="design-image">
+
+            <img
+            src="images/HW-${id}.jpg"
+            alt="Haji Wallpaper Design HW-${id}"
+            loading="lazy"
+            onclick="openViewer('images/HW-${id}.jpg')"
+            onerror="this.parentElement.parentElement.style.display='none';">
+
+        </div>
+
+        <div class="design-info">
+
+            <h3>Wallpaper Design</h3>
+
+            <div class="design-id">
+            Design ID: <strong>HW-${id}</strong>
+            </div>
+
+            <a
+            class="whatsapp-small"
+            href="https://wa.me/923455675180?text=Assalam-o-Alaikum%20I%20am%20interested%20in%20wallpaper%20design%20HW-${id}"
+            target="_blank">
+
+            💬 Ask About This Design
+
+            </a>
+
+        </div>
+    `;
+
+    gallery.appendChild(design);
+}
+
 
 
 /* SEARCH */
 
 function searchDesigns(){
 
-const search =
-document.getElementById("search")
-.value
-.toLowerCase();
+    let search =
+    document.getElementById("search")
+    .value
+    .toLowerCase()
+    .trim();
 
-const designs =
-document.querySelectorAll(".design");
+    let designs =
+    document.querySelectorAll(".design");
 
-designs.forEach(function(design){
+    let visible = 0;
 
-const text =
-design.innerText.toLowerCase();
+    designs.forEach(function(design){
 
-if(text.includes(search)){
+        let id =
+        design.getAttribute("data-id");
 
-design.style.display="block";
+        if(id.includes(search)){
 
-}else{
+            design.style.display = "block";
+            visible++;
 
-design.style.display="none";
+        }else{
+
+            design.style.display = "none";
+
+        }
+
+    });
+
+    document.getElementById("galleryCount").innerText =
+    "Showing " + visible + " designs";
 
 }
 
-});
+
+
+/* FULL SCREEN IMAGE */
+
+function openViewer(image){
+
+    document.getElementById("viewerImage").src = image;
+
+    document.getElementById("viewer").style.display = "flex";
+
+}
+
+function closeViewer(){
+
+    document.getElementById("viewer").style.display = "none";
 
 }
 
 
 
-/* LANGUAGE SWITCH */
+/* LANGUAGE */
 
 let urduMode = false;
 
 function toggleLanguage(){
 
-urduMode = !urduMode;
+    urduMode = !urduMode;
 
+    let button =
+    document.querySelector(".language-btn");
 
-if(urduMode){
+    if(urduMode){
 
-document.documentElement.lang="ur";
+        button.innerText = "English";
 
-document.querySelector(".language-btn").innerText="English";
+        document.getElementById("heroEnglish").style.display = "none";
 
-document.getElementById("heroEnglish").style.display="none";
+        document.getElementById("heroUrdu").style.display = "block";
 
-document.getElementById("heroUrdu").style.display="block";
+        document.getElementById("aboutEnglish").style.display = "none";
 
-document.getElementById("aboutEnglish").style.display="none";
+        document.getElementById("aboutUrdu").style.display = "block";
 
-document.getElementById("aboutUrdu").style.display="block";
+    }else{
 
-}else{
+        button.innerText = "اردو";
 
-document.documentElement.lang="en";
+        document.getElementById("heroEnglish").style.display = "block";
 
-document.querySelector(".language-btn").innerText="اردو";
+        document.getElementById("heroUrdu").style.display = "none";
 
-document.getElementById("heroEnglish").style.display="block";
+        document.getElementById("aboutEnglish").style.display = "block";
 
-document.getElementById("heroUrdu").style.display="none";
+        document.getElementById("aboutUrdu").style.display = "none";
 
-document.getElementById("aboutEnglish").style.display="block";
-
-document.getElementById("aboutUrdu").style.display="none";
-
-}
+    }
 
 }
+
+
+
+/* ESC KEY CLOSES IMAGE */
+
+document.addEventListener("keydown", function(event){
+
+    if(event.key === "Escape"){
+
+        closeViewer();
+
+    }
+
+});
 
 </script>
 
