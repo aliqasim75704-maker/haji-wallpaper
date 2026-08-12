@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Haji Wallpaper & Panaflex | Premium Wall Designs</title>
+
+<meta name="description"
+content="Haji Wallpaper & Panaflex - Professional wallpaper and panaflex installation for homes, offices, shops and more.">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f7f5f1;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#ffffffee;
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid #eee;
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:18px 25px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:800;
+    letter-spacing:.5px;
+}
+
+.logo span{
+    color:#b8860b;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    margin-left:25px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#b8860b;
+}
+
+/* HERO */
+
+.hero{
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:70px 20px;
+
+    background:
+    linear-gradient(#0007,#0007),
+    url("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1800&q=85");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:850px;
+    color:white;
+}
+
+.hero h1{
+    font-size:clamp(40px,7vw,75px);
+    line-height:1.05;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#f3c969;
+}
+
+.hero p{
+    font-size:20px;
+    line-height:1.7;
+    max-width:700px;
+    margin:auto;
+    opacity:.95;
+}
+
+.buttons{
+    margin-top:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 25px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:7px;
+    transition:.25s;
+}
+
+.btn-primary{
+    background:#b8860b;
+    color:white;
+}
+
+.btn-secondary{
+    background:white;
+    color:#222;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* SECTION */
+
+section{
+    padding:80px 20px;
+}
+
+.section-container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#777;
+}
+
+/* SERVICES */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.service{
+    background:white;
+    padding:30px 20px;
+    text-align:center;
+    border-radius:18px;
+    box-shadow:0 8px 25px #0000000b;
+    transition:.25s;
+}
+
+.service:hover{
+    transform:translateY(-7px);
+}
+
+.service-icon{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.service h3{
+    margin-bottom:10px;
+}
+
+.service p{
+    color:#777;
+    line-height:1.6;
+}
+
+/* SEARCH */
+
+.search-box{
+    max-width:600px;
+    margin:0 auto 35px;
+}
+
+.search-box input{
+    width:100%;
+    padding:17px 20px;
+    border:1px solid #ddd;
+    border-radius:50px;
+    font-size:16px;
+    outline:none;
+}
+
+.search-box input:focus{
+    border-color:#b8860b;
+}
+
+/* GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.design{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 25px #0000000c;
+    transition:.25s;
+}
+
+.design:hover{
+    transform:translateY(-5px);
+}
+
+.design-image{
+    height:230px;
+    background-size:cover;
+    background-position:center;
+}
+
+.design-info{
+    padding:18px;
+}
+
+.design-info h3{
+    margin-bottom:5px;
+}
+
+.design-info p{
+    color:#888;
+    font-size:14px;
+}
+
+/* CTA */
+
+.cta{
+    background:#171717;
+    color:white;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.cta p{
+    color:#ccc;
+    margin-bottom:25px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0e0e0e;
+    color:#aaa;
+    text-align:center;
+    padding:30px 20px;
+}
+
+footer strong{
+    color:white;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#25d366;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    text-decoration:none;
+    box-shadow:0 8px 25px #0004;
+    z-index:999;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .services{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    nav{
+        display:none;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .services,
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        min-height:80vh;
+    }
+
+    section{
+        padding:60px 15px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+HAJI <span>WALLPAPER</span> & PANAFLEX
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#designs">Designs</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>
+Transform Your <span>Walls</span>
+</h1>
+
+<p>
+Premium wallpapers and Panaflex designs for homes,
+offices, shops and every space that deserves a beautiful wall.
+</p>
+
+<div class="buttons">
+
+<a href="#designs" class="btn btn-primary">
+Explore Designs 🎨
+</a>
+
+<a href="#contact" class="btn btn-secondary">
+Contact Us
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="section-container">
+
+<div class="section-title">
+
+<h2>Our Services</h2>
+
+<p>
+Professional wall solutions for every space.
+</p>
+
+</div>
+
+
+<div class="services">
+
+
+<div class="service">
+
+<div class="service-icon">🏠</div>
+
+<h3>Home Wallpaper</h3>
+
+<p>
+Beautiful designs for bedrooms,
+living rooms and other areas of your home.
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-icon">🏢</div>
+
+<h3>Office Wallpaper</h3>
+
+<p>
+Professional wall designs that
+give your workplace a modern look.
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-icon">🎨</div>
+
+<h3>Custom Designs</h3>
+
+<p>
+Choose a design you love and
+we can help bring it to your wall.
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-icon">🖼️</div>
+
+<h3>Panaflex</h3>
+
+<p>
+Quality Panaflex printing and
+installation for your requirements.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- DESIGNS -->
+
+<section id="designs">
+
+<div class="section-container">
+
+<div class="section-title">
+
+<h2>Explore Our Designs</h2>
+
+<p>
+Browse our collection and find a design you love.
+</p>
+
+</div>
+
+
+<div class="search-box">
+
+<input
+type="text"
+id="search"
+placeholder="🔍 Search designs..."
+onkeyup="searchDesigns()"
+>
+
+</div>
+
+
+
+<div class="gallery" id="gallery">
+
+
+<div class="design">
+
+<div class="design-image"
+style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85');">
+</div>
+
+<div class="design-info">
+
+<h3>Modern Luxury</h3>
+
+<p>Design ID: HW-001</p>
+
+</div>
+
+</div>
+
+
+
+<div class="design">
+
+<div class="design-image"
+style="background-image:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85');">
+</div>
+
+<div class="design-info">
+
+<h3>Elegant Interior</h3>
+
+<p>Design ID: HW-002</p>
+
+</div>
+
+</div>
+
+
+
+<div class="design">
+
+<div class="design-image"
+style="background-image:url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85');">
+</div>
+
+<div class="design-info">
+
+<h3>Premium Style</h3>
+
+<p>Design ID: HW-003</p>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section class="cta" id="contact">
+
+<div class="section-container">
+
+<h2>Found a Design You Love?</h2>
+
+<p>
+Take a screenshot of the design and contact us.
+We'll help you with your wallpaper or Panaflex installation.
+</p>
+
+<a
+href="https://wa.me/"
+class="btn btn-primary"
+target="_blank">
+
+💬 Contact Us on WhatsApp
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<p>
+© 2026 <strong>Haji Wallpaper & Panaflex</strong>.
+All rights reserved.
+</p>
+
+<p style="margin-top:8px;">
+Professional Wallpaper & Panaflex Installation
+</p>
+
+</footer>
+
+
+
+<a
+class="whatsapp"
+href="https://wa.me/"
+target="_blank"
+title="Contact us on WhatsApp">
+
+💬
+
+</a>
+
+
+
+<script>
+
+function searchDesigns(){
+
+const search =
+document.getElementById("search")
+.value
+.toLowerCase();
+
+const designs =
+document.querySelectorAll(".design");
+
+designs.forEach(function(design){
+
+const text =
+design.innerText.toLowerCase();
+
+if(text.includes(search)){
+
+design.style.display="block";
+
+}else{
+
+design.style.display="none";
+
+}
+
+});
+
+}
+
+</script>
+
+
+</body>
+</html>
